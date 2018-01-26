@@ -1,0 +1,430 @@
+.view { 
+  width: 100%;
+  height: 100%;
+  @media screen and (min-width: 768px) {
+     /* 公共样式 */
+    .w {
+      width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+    h3 {
+      font-size: 40px;
+      font-weight: 700;
+      float: left;
+      margin-left: 16px;
+      margin-top: 28px;
+      position: relative;
+      color: #1e1e1e;
+    }
+    h3::after {
+      content: '';
+      width: 84px;
+      height: 4px;
+      background-color: #000;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      z-index: 10;
+    }
+    .xiushi {
+      float: left;
+      padding-top: 15px;
+    }
+    .line {
+      width: 100%;
+      position: absolute;
+      top: 81px;
+      left: 22px;
+      border: 1px solid #ddd;
+    }
+  }
+ 
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type="number"]{
+    -moz-appearance: textfield;
+  }
+  input,textarea{border:1px solid #ddd;background-color:transparent;}
+  /* 顶部 */
+  .header {
+    width: 100%;
+    height: 60px;
+    background-color: #f7f7f7;
+    .header-body {
+      height: 60px;
+      img {
+        float: left;
+        margin: 10px 16px 0 0;
+      }
+      .title {
+        float: left;
+        line-height: 60px;
+        color: #1e1e1e;
+        font-size: 24px;
+      }
+    }
+  }
+  /* banner轮播 */
+  .laika_carousel {
+    .item {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .pc {
+  /* 来卡游戏 */
+    .laika_game {
+      width: 100%;
+      height: 537px;
+      background-image: url('../images/pc/背景1.png');
+      .game_center {
+        position: relative;
+        overflow: hidden;
+        .swiper-container-game {
+          position: relative;
+          width: 100%;
+          bottom: 70px;
+          left: 20px;
+          .swiper-button-next {
+            right: 64px;
+            top: 55%;
+          }
+          .swiper-button-prev {
+            left: -10px;
+            top: 55%;
+          }
+        }
+      }
+    }
+    /* 合作伙伴 */
+    .laika_cooperation {
+      width: 100%;
+      height: 462px;
+      background-image: url('../images/pc/背景2.png');
+      .cooperation_center {
+        height: 462px;
+        position: relative;
+        overflow: hidden;
+        .cooperation_content {
+          float: left;
+          width: 100%;
+          padding-left: 25px;
+          margin-top: -40px;
+          .cooperation_left {
+            width: 50%;
+            float: left;
+            font-size: 24px;
+            color: #191919;
+          }
+          .cooperation_right {
+            width: 50%;
+            float: left;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            .ewm {
+              display: flex;
+              flex-wrap: wrap;
+              img {
+                width: 152px;
+                height: 152px;
+                margin: 0 auto;
+              }
+              .title {
+                margin: 0 auto;
+                text-align: center;
+                font-size: 22px;
+                color: #666;
+                padding-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    /* 业务合作 */
+    .laika_business {
+      width: 100%;
+      .business_center {
+        position: relative;
+        height: 550px;
+        .business_content {
+          height: 274px;
+          background-image: url('../images/pc/业务合作背景.png');
+          min-width: 840px;
+          position: absolute;
+          top: 55%;
+          left: 50%;
+          transform: translate(-50%, -50%);  /* 使用css3的transform来实现 */
+          .title {
+            font-size: 20px;
+            color: #f98700;
+            position: absolute;
+            top: -55px;
+          }
+          .my_submit {
+            padding: 30px 55px;
+            div {
+              font-size: 22px;
+            }
+            span {
+              color: #6f6f6f;
+            }
+            .top {
+              height: 20px;
+              .left {
+                float: left;
+              }
+              .right {
+                float: right;
+              }
+              div {
+                font-size: 22px;
+                span {
+                  margin-right: 10px;
+                }
+              }
+            }
+            .center {
+              margin-top: 30px;
+              position: relative;
+              .biezhu {
+                position: absolute;
+                top: 0;
+              }
+            .text {
+              margin-left: 60px;
+              width: 670px;
+              height: 100px;
+              resize: none;
+            }
+            }
+            .my_bottom {
+              width: 370px;
+              height: 56px;
+              background-color: #fb8109;
+              color: #fff;
+              text-align: center;
+              line-height: 56px;
+              margin: 0 auto;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+   /* 版权 */
+  .copyright {
+    width: 100%;
+    height: 80px;
+    background-color: #121314;
+    font-size: 22px;
+    color: #999;
+    text-align: center;
+    line-height: 80px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .view {
+  width: 100%;
+  height: 100%;
+  .w {
+    width: 100%;
+  }
+  /* 公共样式 */
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 16px;
+    margin-top: 28px;
+    position: relative;
+  }
+  h3::after {
+    content: '';
+    width: 45px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 10;
+  }
+  .line {
+    width: 89%;
+    position: absolute;
+    top: 62px;
+    left: 21px;
+    border: 1px solid #f2f2f2;
+  }
+  .web {
+    /* 来卡游戏 */
+    .laika_game {
+      width: 100%;
+      height: 4.95rem;
+      background-image: url('../images/web/背景1.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      .game_center {
+        position: relative;
+        overflow: hidden;
+        .swiper-container-game {
+          position: relative;
+          padding: 0 .3rem;
+          margin-top: .7rem;
+          img {
+            width: 1.95rem;
+            height: 2.63rem;
+          }
+          .swiper-slide {
+            width: 1.95rem !important;
+            height: 2.63rem !important;
+            margin-right:.5rem !important;
+          }
+          .swiper-button-next {
+            right: 0px;
+            top: 55%;
+          }
+          .swiper-button-prev {
+            left: 0px;
+            top: 55%;
+          }
+        }
+      }
+    }
+      /* 合作伙伴 */
+    .laika_cooperation {
+      width: 100%;
+      background-color: #f2f2f2;
+      .line1 {border: 1px solid #ddd;}
+      .cooperation_center {
+        position: relative;
+        overflow: hidden;
+        .cooperation_left {
+          font-size: 18px;
+          line-height: 30px;
+          color: #191919;
+          padding:  0 .3rem;
+          padding-top: .3rem;
+        }
+        .cooperation_right {
+          .ewm {
+            width: 3rem;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: .5rem;
+            margin-top: .4rem;
+            img {
+              width: 1.84rem;
+              height: 1.84rem;
+              margin: 0 auto;
+            }
+            .title {
+              margin: 0 auto;
+              text-align: center;
+              font-size: 14px;
+              color: #666;
+              padding: 10px 0;
+            }
+          }
+          
+        }
+      }
+    }
+    /* 业务合作 */
+    .laika_business {
+      width: 100%;
+      .line {
+        top: 34px;
+      }
+      .business_center {
+        position: relative;
+        .title {
+          font-size: 15px;
+          color: #f98700;
+          padding: .3rem .3rem;
+        }
+        .business_content {
+          background-image: url('../images/web/业务合作.png');
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          width: 6.3rem;
+          height: 3.16rem;
+          margin: 0 auto;
+          .my_submit {
+            padding: .3rem .4rem;
+            div {
+              font-size: .2rem;
+            }
+            span {
+              color: #6f6f6f;
+            }
+            .top {
+              height: .4rem;
+              input {
+                width: 2rem;
+              }
+              .left {
+                float: left;
+              }
+              .right {
+                float: right;
+              }
+              div {
+                font-size: .2rem;
+                span {
+                  margin-right: .1rem;
+                }
+              }
+            }
+            .center {
+              margin-top: .3rem;
+              position: relative;
+              .biezhu {
+                position: absolute;
+                top: 0;
+              }
+            .text {
+              margin-left: .6rem;
+              width: 4.9rem;
+              height: 1rem;
+              resize: none;
+            }
+            }
+            .my_bottom {
+              width: 4.16rem;
+              height: .6rem;
+              background-color: #fb8109;
+              color: #fff;
+              text-align: center;
+              line-height: .56rem;
+              margin: 0 auto;
+              margin-top: .1rem;
+              margin-left: .99rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* 版权 */
+  .copyright {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+  }
+}
+}

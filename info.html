@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./static/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/info.css">
+  <title>快乐猜玩法介绍</title>
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script>
+    !function (n, e) {
+      var docEl = n.documentElement,
+        resizeEvt = 'orientationchange' in e ? 'orientationchange' : 'resize';
+      window.recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+      };
+      if (!n.addEventListener) return;
+      e.addEventListener(resizeEvt, window.recalc, false);
+      n.addEventListener('DOMContentLoaded', window.recalc, false);
+      window.recalc();
+
+    }(window.document, window);
+  </script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .imgs img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="view">
+    <div class="imgs box">
+      <img src="../images/pc/快乐猜详情.png" alt="">
+    </div>
+    <div class="pc hidden-xs">
+      <!-- 业务合作 -->
+      <div class="laika_business">
+        <div class="w business_center">
+          <img class="xiushi " src="./images/pc/标题修饰.png" alt="">
+          <h3>业务合作</h3>
+          <div class="line"></div>
+          <div class="business_content">
+            <div class="title">请填写您的联系方式，我们将会在第一时间联系你</div>
+            <div class="my_submit">
+              <div class="top">
+                <div class="left">
+                  <span>姓名</span>
+                  <input class="my_name pc_my_name" type="text" placeholder="例:张三">
+                </div>
+                <div class="right">
+                  <span>电话</span>
+                  <input class="my_iphone pc_my_iphone" type="number">
+                </div>
+              </div>
+              <div class="center">
+                <span class="biezhu">备注</span>
+                <textarea class="my_message pc_my_message text" name="" id="" maxlength="50"></textarea>
+              </div>
+              <div class="my_bottom pc_my_bottom">
+                提交
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="web visible-xs">
+      <!-- 业务合作 -->
+      <div class="laika_business">
+        <div class="w business_center">
+          <h3>业务合作</h3>
+          <div class="line"></div>
+          <div class="title">请填写您的联系方式，我们将会在第一时间联系你</div>
+          <div class="business_content">
+            <div class="my_submit">
+              <div class="top">
+                <div class="left">
+                  <span>姓名</span>
+                  <input class="my_name web_my_name" type="text" placeholder="例:张三">
+                </div>
+                <div class="right">
+                  <span>电话</span>
+                  <input class="my_iphone web_my_iphone" type="number">
+                </div>
+              </div>
+              <div class="center">
+                <span class="biezhu">备注</span>
+                <textarea class="my_message web_my_message text" name="" id="" maxlength="50"></textarea>
+              </div>
+              <div class="my_bottom web_my_bottom">
+                提交
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 版权 -->
+    <div class="copyright">
+      来卡世界版权所有&nbsp;&nbsp;@Copyright&nbsp;2018
+    </div>
+  </div>
+</body>
+</html>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/info.js"></script>

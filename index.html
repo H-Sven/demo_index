@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./static/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/swiper/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>来卡世界</title>
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script>
+    !function (n, e) {
+        var docEl = n.documentElement,
+          resizeEvt = 'orientationchange' in e ? 'orientationchange' : 'resize';
+        window.recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+        if (!n.addEventListener) return;
+        e.addEventListener(resizeEvt, window.recalc, false);
+        n.addEventListener('DOMContentLoaded', window.recalc, false);
+        window.recalc();
+
+      }(window.document, window);
+  </script>
+</head>
+<body>
+  <div class="view">
+    <!-- 顶部 -->
+    <div class="header hidden-xs">
+      <div class="w header-body">
+        <img src="./images/pc/LOGO.png" alt="">
+        <div class="title">来卡世界</div>
+      </div>
+    </div>
+    <!--banner轮播-->
+    <div class="laika_carousel">
+      <div class="swiper-container-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide item">
+            <a class="hidden-xs" href="javascript:;">
+              <img src="./images/pc/banner.png" alt="...">
+            </a>
+            <a class="visible-xs" href="javascript:;">
+              <img src="./images/web/web-banner.png" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pc hidden-xs">
+      <!-- 来卡游戏 -->
+      <div class="laika_game ">
+        <div class="w game_center">
+          <img class="xiushi" src="./images/pc/标题修饰.png" alt="">
+          <h3>来卡游戏</h3>
+          <div class="swiper-container-game">
+            <div class="swiper-wrapper">
+              <a href="./info.html?index=1" class="swiper-slide" target="_blank">
+                <img class="show" src="./images/pc/快乐黑.png" alt="">
+                <img class="hidden" src="./images/pc/快乐.png" alt="">
+              </a>
+              <a href="./info.html?index=2" class="swiper-slide" target="_blank">
+                <img class="show" src="./images/pc/时时黑.png" alt="">
+                <img class="hidden" src="./images/pc/时时.png" alt="">
+              </a>
+              <a href="./info.html?index=3" class="swiper-slide" target="_blank">
+                <img class="show" src="./images/pc/脑力黑.png" alt="">
+                <img class="hidden" src="./images/pc/脑力.png" alt="">
+              </a>
+            </div>
+            <!-- 下标小点 -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- 左右箭头 -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+        </div>
+      </div>
+      <!-- 合作伙伴 -->
+      <div class="laika_cooperation">
+        <div class="w cooperation_center">
+          <img class="xiushi" src="./images/pc/标题修饰.png" alt="">
+          <h3>合作伙伴</h3>
+          <div class="line"></div>
+          <div class="cooperation_content">
+            <div class="cooperation_left">
+              来卡商城APP是一款专门为手机用户提供手机话费充值卡及商城购物卡（京东卡，沃尔玛卡等）在线销售的移动互联网软件。具有商品搜索，浏览，购买，支付，收藏等在线功能，成为用户方便快捷的购卡消费平台。
+            </div>
+            <div class="cooperation_right">
+              <div class="ewm">
+                <img src="./images/pc/ios.png" alt="">
+                <div class="title">来卡商城ios下载</div>
+              </div>
+              <div class="ewm">
+                <img src="./images/pc/android.png" alt="">
+                <div class="title">来卡商城Android下载</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 业务合作 -->
+      <div class="laika_business">
+        <div class="w business_center">
+          <img class="xiushi " src="./images/pc/标题修饰.png" alt="">
+          <h3>业务合作</h3>
+          <div class="line"></div>
+          <div class="business_content">
+            <div class="title">请填写您的联系方式，我们将会在第一时间联系你</div>
+            <div class="my_submit">
+              <div class="top">
+                <div class="left">
+                  <span>姓名</span>
+                  <input class="my_name pc_my_name" type="text" placeholder="例:张三">
+                </div>
+                <div class="right">
+                  <span>电话</span>
+                  <input class="my_iphone pc_my_iphone" type="number" >
+                </div>
+              </div>
+              <div class="center">
+                <span class="biezhu">备注</span>
+                <textarea class="my_message pc_my_message text" name="" id="" maxlength="50"></textarea>
+              </div>
+              <div class="my_bottom pc_my_bottom">
+                提交
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="web visible-xs">
+      <!-- 来卡游戏 -->
+      <div class="laika_game">
+        <div class="w game_center">
+          <h3>来卡游戏</h3>
+          <div class="swiper-container-game">
+            <div class="swiper-wrapper">
+              <a href="./info.html?index=1" class="swiper-slide" target="_blank">
+                <img src="./images/web/快乐.png" alt="">
+              </a>
+              <a href="./info.html?index=2" class="swiper-slide" target="_blank">
+                <img  src="./images/web/时时.png" alt="">
+              </a>
+              <a href="./info.html?index=3" class="swiper-slide" target="_blank">
+                <img src="./images/web/脑力.png" alt="">
+              </a>
+            </div>
+            <!-- 下标小点 -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- 左右箭头 -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+        </div>
+      </div>
+      <!-- 合作伙伴 -->
+      <div class="laika_cooperation">
+        <div class="w cooperation_center">
+          <h3>合作伙伴</h3>
+          <div class="line line1"></div>
+          <div class="cooperation_left">
+            来卡商城APP是一款专门为手机用户提供手机话费充值卡及商城购物卡（京东卡，沃尔玛卡等）在线销售的移动互联网软件。具有商品搜索，浏览，购买，支付，收藏等在线功能，成为用户方便快捷的购卡消费平台。
+          </div>
+          <div class="cooperation_right">
+            <div class="ewm">
+              <img src="./images/web/ios.png" alt="">
+              <div class="title">来卡ios下载</div>
+            </div>
+            <div class="ewm">
+              <img src="./images/web/android.png" alt="">
+              <div class="title">来卡android下载</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 业务合作 -->
+      <div class="laika_business">
+        <div class="w business_center">
+          <h3>业务合作</h3>
+          <div class="line"></div>
+          <div class="title">请填写您的联系方式，我们将会在第一时间联系你</div>
+          <div class="business_content">
+            <div class="my_submit">
+              <div class="top">
+                <div class="left">
+                  <span>姓名</span>
+                  <input class="my_name web_my_name" type="text" placeholder="例:张三">
+                </div>
+                <div class="right">
+                  <span>电话</span>
+                  <input class="my_iphone web_my_iphone" type="number">
+                </div>
+              </div>
+              <div class="center">
+                <span class="biezhu">备注</span>
+                <textarea class="my_message web_my_message text" name="" id="" maxlength="50"></textarea>
+              </div>
+              <div class="my_bottom web_my_bottom">
+                提交
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 版权 -->
+    <div class="copyright">
+      来卡世界版权所有&nbsp;&nbsp;@Copyright&nbsp;2018
+    </div>
+  </div>
+</body>
+</html>
+<script src="./js/jquery.min.js"></script>
+<!-- <script src="./static/bootstrap/bootstrap.min.js"></script> -->
+<script src="./static/swiper/swiper.min.js"></script>
+<script src="./js/index.js"></script>
